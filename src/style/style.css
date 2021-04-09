@@ -1,5 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 10px;
+}
+
+.search-form {
+    display: none;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d8e2dc;;
+  outline: none;
+}
+
+form button {
+  background-color: transparent;
+  border: 1px solid #d8e2dc;;
+  font-size: 25px;
+  padding: 2px 20px ;
+  border-radius: 10px;
+
+  
+}
+
+.main::after {
+  top: 0;
+  content: "";
+  position: absolute;
+  background-image: url("../assets/img/rainny.jpg");
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: -1;
+  padding: 0;
+  opacity: 0.8;
+}
+
+.footer-section {
+    display: flex;
+    gap: 5%;
+    color: #d8e2dc;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.location {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: #d8e2dc;
+}
+
+.city {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.mid-section img {
+  width: 200px;
+}
+
+.tmp {
+  font-size: 90px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.btn-div {
+    font-size: 30px;
+    color: #d8e2dc;
+}
+
+.weather-node {
+    font-size: 18px;
+    width: 150px;
+    font-weight: 600;
+    color: #d8e2dc;
 }

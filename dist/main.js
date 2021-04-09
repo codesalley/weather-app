@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const e=document.querySelector(".btn-div"),t=document.querySelector(".search-form");e.addEventListener("click",(e=>{t.classList.toggle("active")}))}()})();
