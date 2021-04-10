@@ -9,7 +9,8 @@ export default function clickHandler() {
   });
   searchInput.addEventListener("submit", (e) => {
       e.preventDefault();
-      console.log(inputcity.value)
     locationFetch(inputcity.value);
+    searchInput.classList.remove('active');
+ 
   });
 }

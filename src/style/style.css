@@ -17,14 +17,12 @@
 
 .search-form {
   display: none;
-
 }
 
 .active {
   display: flex;
   justify-content: center;
   gap: 20px;
-  
 }
 
 input {
@@ -32,7 +30,6 @@ input {
   border-radius: 10px;
   border: 1px solid #d8e2dc;
   outline: none;
-
 }
 
 form button {
@@ -41,10 +38,6 @@ form button {
   font-size: 25px;
   padding: 2px 20px;
   border-radius: 10px;
-}
-
-.loader {
-  display: none;
 }
 
 .main::after {
@@ -66,7 +59,7 @@ form button {
   gap: 5%;
   color: #d8e2dc;
   width: 100%;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .location {
@@ -93,13 +86,11 @@ form button {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-
 }
 
 .btn-div {
   font-size: 30px;
   color: #d8e2dc;
- 
 }
 
 .note {
@@ -107,4 +98,88 @@ form button {
   width: 150px;
   font-weight: 600;
   color: #d8e2dc;
+}
+
+.loader {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #d3f3f1;
+}
+
+.spinner {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  box-shadow: 2px -2px #b5c6e0;
+ 
+  top: 45%;
+  left: 50%;
+  border-radius: 50%;
+  animation-name: rorate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+}
+
+.spinner::after {
+  content: '';
+  box-shadow: 2px 3px #b5c6e0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  content: '';
+  box-shadow: -2px 3px #b5c6e0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+@keyframes rorate {
+  0% {
+    transform: scale(1);
+    box-shadow: -10px 3px #b5c6e0;
+ 
+  }
+
+  100% {
+    transform: scale(1.5);
+    box-shadow: 10px -3px #b5c6e0;
+  }
+}
+
+.active-loader {
+  display: block;
+}
+
+@media screen and (min-width: 676px) {
+    .note {
+      font-size: 34px;
+      width: 50%;
+    }
+
+    .footer-section {
+      background-color: rgba(155, 158, 197, 0.418);
+      padding: 30px;
+      box-shadow: -2px -10px 10px rgba(43, 42, 42, 0.445);
+    }
+    .main {
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .city {
+      font-size: 50px;
+    }
 }
