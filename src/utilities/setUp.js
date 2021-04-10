@@ -1,6 +1,5 @@
+import geolocation from 'geolocation';
 import { loglanFetch } from '../helpers/fetchData';
-
-const geolocation = require('geolocation');
 
 export default function setUp() {
   geolocation.getCurrentPosition(async (err, position) => {
