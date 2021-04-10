@@ -1,12 +1,10 @@
-import {loglanFetch} from '../helpers/fetchData'
-import showData from '../view/showWeather';
+import { loglanFetch } from '../helpers/fetchData';
+
+const geolocation = require('geolocation');
+
 export default function setUp() {
-    const geolocation = require('geolocation')
-
-    geolocation.getCurrentPosition(async function (err, position) {
-      if (err) throw err
-       loglanFetch(position.coords);  
-    });
-
-
-};
+  geolocation.getCurrentPosition(async (err, position) => {
+    if (err) throw err;
+    loglanFetch(position.coords);
+  });
+}
