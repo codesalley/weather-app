@@ -16,30 +16,35 @@
 }
 
 .search-form {
-    display: none;
+  display: none;
+
 }
 
 .active {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
 }
 
 input {
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #d8e2dc;;
+  border: 1px solid #d8e2dc;
   outline: none;
+
 }
 
 form button {
   background-color: transparent;
-  border: 1px solid #d8e2dc;;
+  border: 1px solid #d8e2dc;
   font-size: 25px;
-  padding: 2px 20px ;
+  padding: 2px 20px;
   border-radius: 10px;
+}
 
-  
+.loader {
+  display: none;
 }
 
 .main::after {
@@ -57,23 +62,23 @@ form button {
 }
 
 .footer-section {
-    display: flex;
-    gap: 5%;
-    color: #d8e2dc;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  gap: 5%;
+  color: #d8e2dc;
+  width: 100%;
+  justify-content: space-around; 
 }
 
 .location {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    color: #d8e2dc;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  color: #d8e2dc;
 }
 
 .city {
-    font-size: 40px;
-    font-weight: 600;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .mid-section img {
@@ -85,19 +90,21 @@ form button {
 }
 
 .search {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+
 }
 
 .btn-div {
-    font-size: 30px;
-    color: #d8e2dc;
+  font-size: 30px;
+  color: #d8e2dc;
+ 
 }
 
-.weather-node {
-    font-size: 18px;
-    width: 150px;
-    font-weight: 600;
-    color: #d8e2dc;
+.note {
+  font-size: 18px;
+  width: 150px;
+  font-weight: 600;
+  color: #d8e2dc;
 }
