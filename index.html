@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+    <div class="main">
+      <div class="top-section">
+        <div class="weather-note">
+          <form  class="search-form">
+            <input type="text" name="city" id="city" placeholder="eg: London" />
+            <button type="submit">
+              <i class="fa fa-search submit-btn" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <div class="search">
+            <p class="note"> You Might need a jacket </p>
+            <div class="btn-div">
+
+                <i class="fa fa-search btn" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+      <div class="mid-section">
+        <img class="weather-icon" src="./src/assets/icons/icons-snowy.png" alt="" />
+      </div>
+      <div class="footer-section">
+        <h3 class="tmp">18º</h3>
+        <div class="location">
+          <p class="city">London</p>
+          <div class="time">02:22- monday 2 spet</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
